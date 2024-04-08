@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<style>
+    body
+    {
+        display: grid;
+        height: 100vh;
+        place-items: center;
+    }
+    .container
+    {
+        width: 380px;
+        height: 200px;
+        border: 3px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+<div class="container" id="container">
+    <table cellspacing="20px">
+        <tr>
+            <td><label for="">fahrenheit</label></td>
+            <td><input type="text" id="fahrenheitvalue"></td>
+            <td><button onclick="convertion()">convert</button></td>
+        </tr>
+        <tr>
+            <td><label for="">celsius</label></td>
+            <td><p id="celsiusvalue"></p></td>
+        </tr>
+    </table>
+</div>
+
+
+
+<script>
+      function convertion()
+      {
+        let fahrenheitvalue= Number(document.getElementById("fahrenheitvalue").value) 
+        let celsiusvalue=(fahrenheitvalue-32)*5/9
+        document.getElementById("celsiusvalue").innerHTML=Math.floor(celsiusvalue)+"C"
+        document.getElementById("celsiusvalue").style.color="white"
+        if(celsiusvalue<=18)
+        {
+            document.getElementById("container").style.backgroundColor="aqua"
+        }
+        else if(celsiusvalue<=24)
+        {
+            document.getElementById("container").style.backgroundColor="blue"
+            
+        }
+        else if(celsiusvalue<=28)
+        {
+            document.getElementById("container").style.backgroundColor="green"
+            
+        }
+        else 
+        {
+            document.getElementById("container").style.backgroundColor="red"
+
+        }
+
+       
+      }
+
+</script>
+</body>
+</html>

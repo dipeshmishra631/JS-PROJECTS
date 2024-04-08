@@ -1,0 +1,68 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+body
+{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.container
+{
+    width: fit-content !important;
+    height:fit-content !important;
+}
+table
+{
+     width: 400px; 
+}
+.num
+{
+    width: 100px;
+    height: 50px;
+    background-color:white;
+    border-radius:10px;
+}
+.num:hover
+{
+    background-color: rgb(236, 111, 8);
+}
+.opt
+{
+    width: 100px;
+    height: 50px;
+    background-color:grey;
+    border-radius: 10px;
+}
+.opt:hover
+{
+    background-color: white;
+}
+.answer
+{
+    width: 100px;
+    height: 50px;
+    background-color: green;
+}
+.answer:hover
+{
+    background-color: aliceblue;
+}
+.clr
+{
+  height: 50px;
+  background-color: red;
+}
+.clr:hover
+{
+  background-color: white;
+}
+button
+{
+    font-size: larger !important;
+    font-weight: bolder;
+}
+
+
